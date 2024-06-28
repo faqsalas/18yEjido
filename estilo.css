@@ -182,7 +182,7 @@ body, html {
 }
 
 .hero-image {
-  background-image: url(img/carrosaFunebre.jpg);
+  background-image: url(img/carrosa_funebre.jpg);
   height: 750px;
   background-position: center;
   background-repeat: no-repeat;
@@ -262,11 +262,7 @@ body, html {
   height: 100vh;
 }
 
-.video2 {
-  grid-column: 3;
-  grid-row: 2;
-  padding: 1em;
-}
+
 
 .articulo{
   padding: 0.5em;
@@ -313,21 +309,28 @@ body, html {
 
 /* Layout contacto*/
 
+#containerContacto {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 100vh;
+}
+
 .titulo-contacto {
-  grid-column: 1 / span 3;
+  grid-column: 1 / span 2;
   grid-row: 2;
   align-content: center;
   padding: 2em;
 }
 
 .contacto-2 {
-  grid-column: 1 / span 2;
+  grid-column: 1 / span 1;
   grid-row: 3;
   padding: 2em 5em;
 }
 
 #mapa {
-  grid-column: 3 / span 1;
+  grid-column: 2 / span 1;
   grid-row: 3;
 }
 
@@ -435,12 +438,6 @@ input[type=submit] {
 
 /* Layout equipo versión responsiva///////////////////////////*/
 
-.video2 {
-  grid-column: 1 / span 3;
-  grid-row: 2;
-  padding: 1em;
-}
-
 .articulo-equipo-1 {
   grid-column: 1 / span 3;
   grid-row: 3;
@@ -478,12 +475,6 @@ input[type=submit] {
   padding: 1em;
 }
 
-.contacto-3 {
-  grid-column: 3 / span 1;
-  grid-row: 3;
-  text-align: center;
-  padding: 0.5em;
-}
 
 #mapa {
   grid-column: 3 / span 1;
@@ -494,17 +485,4 @@ input[type=submit] {
 
 /*footer solo del index para que ocupe todo el alto versión responsiva///////////////////////////*/
 
-/*//////////////////////////cambio de video de la página inicio*/
-
-#videoresponsivo {
-  display: block;
 }
-
-
-#video{
-  display: none;
-}
- 
-
-}
-
